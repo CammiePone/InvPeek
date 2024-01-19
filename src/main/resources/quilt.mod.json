@@ -1,0 +1,52 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "dev.cammiescorner",
+		"id": "invpeek",
+		"version": "${version}",
+		"metadata": {
+			"name": "InvPeek",
+			"description": "Adds HUD elements to peek into small inventories.",
+			"contributors": {
+				"Cammie": "Owner"
+			},
+			"contact": {
+				"homepage": "https://cammiescorner.dev/",
+				"issues": "https://github.com/CammiePone/InvPeek/issues",
+				"sources": "https://github.com/CammiePone/InvPeek"
+			},
+			"license": {
+				"name": "Custom License",
+				"id": "Custom License",
+				"url": "https://github.com/Up-Mods/Arcanus-Continuum/blob/HEAD/LICENSE.md",
+				"description": "This license permits small portions of the code to be used without prior permission, but not large parts."
+			},
+			"icon": "assets/invpeek/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "dev.cammiescorner.invpeek.InvPeek",
+			"client_init": "dev.cammiescorner.invpeek.client.InvPeekClient",
+			"invpeek": "dev.cammiescorner.invpeek.InvPeek"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.1"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=7.0.2"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.20"
+			},
+			{
+				"id": "midnightlib",
+				"versions": "*"
+			}
+		]
+	},
+	"mixin": "invpeek.mixins.json"
+}

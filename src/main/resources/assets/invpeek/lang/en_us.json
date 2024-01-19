@@ -1,0 +1,11 @@
+{
+  "key_category.invpeek": "InvPeek",
+  "key.invpeek.hidePreviews": "Hide Previews",
+
+  "invpeek.midnightconfig.title": "InvPeek",
+  "invpeek.midnightconfig.hideAllPreviews": "Hide All Previews",
+  "invpeek.midnightconfig.sneakToPreviewBookshelf": "Sneak to Preview Chiseled Bookshelf",
+  "invpeek.midnightconfig.sneakToPreviewLectern": "Sneak to Preview Lectern",
+  "invpeek.midnightconfig.sneakToPreviewArmorStand": "Sneak to Preview Armor Stand",
+  "invpeek.midnightconfig.sneakToPreviewItemFrame": "Sneak to Preview Item Frame"
+}
