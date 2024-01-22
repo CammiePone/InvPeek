@@ -27,7 +27,7 @@ InvPeek adds HUD tooltips that let you preview small inventories without having 
 
 ## For Developers:
 
-You can also find the mod on Up's [maven repository](https://maven.uuid.gg/#/releases).
+Step 1: You can also find the mod on Up's [maven repository](https://maven.uuid.gg/#/releases).
 
 ```gradle
 repositories {
@@ -38,3 +38,26 @@ dependencies {
 	modImplementation "dev.cammiescorner:InvPeek:<VERSION>"
 }
 ```
+
+Step 2: From there, you can create a new entrypoint
+```java
+public class ExampleEntrypoint implements InvPeekInitializer {
+	@Override
+	public void init(InvPeekRegistry registry) {
+		// block entity example
+		registry.registerBlockEntity(BlockEntityType.LECTERN, (player, world, hitResult, blockState, lectern) -> lectern.getBook());
+		
+		// entity example
+		registry.registerEntity(EntityType.ITEM_FRAME, (player, world, hitResult, itemFrame) -> itemFrame.getHeldItemStack());
+	}
+}
+```
+
+Step 3: Then add it to the `entrypoints` block in your `quilt.mod.json`
+```json
+"entrypoints": {
+	"invpeek": "com.example.examplemod.ExampleEntrypoint"
+}
+```
+
+Step 4: Profit???
