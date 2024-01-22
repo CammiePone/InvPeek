@@ -1,0 +1,11 @@
+{
+  "key_category.invpeek": "InvPeek",
+  "key.invpeek.hidePreviews": "Önizlemeleri Gizle",
+
+  "invpeek.midnightconfig.title": "InvPeek",
+  "invpeek.midnightconfig.hideAllPreviews": "Bütün Önizlemeleri Gizle",
+  "invpeek.midnightconfig.sneakToPreviewBookshelf": "Yontulmuş Kitaplığı Önizlemek için Eğil",
+  "invpeek.midnightconfig.sneakToPreviewLectern": "Kürsüyü Önizlemek için Eğil",
+  "invpeek.midnightconfig.sneakToPreviewArmorStand": "Zırh Askısını Önizlemek için Eğil",
+  "invpeek.midnightconfig.sneakToPreviewItemFrame": "Eşya Çerçevesini Önizlemek için Eğil"
+}
