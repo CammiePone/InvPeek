@@ -36,7 +36,11 @@
 			},
 			{
 				"id": "quilted_fabric_api",
-				"versions": ">=7.0.2"
+				"versions": ">=7.0.2",
+				"mc-publish": {
+					"curseforge": "634179",
+					"modrinth": "qvIfYCYJ"
+				}
 			},
 			{
 				"id": "minecraft",
@@ -44,9 +48,20 @@
 			},
 			{
 				"id": "midnightlib",
-				"versions": "*"
+				"versions": "*",
+				"mc-publish": {
+					"curseforge": "488090",
+					"modrinth": "codAaoxh"
+				}
 			}
 		]
 	},
-	"mixin": "invpeek.mixins.json"
+	"mixin": "invpeek.mixins.json",
+	"mc-publish": {
+		"curseforge": "964287",
+		"modrinth": "7OGM7NIw",
+		"loaders": [
+			"quilt"
+		]
+	}
 }
